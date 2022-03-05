@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>portainer-ce</Name>
+  <Repository>6053537/portainer-ce</Repository>
+  <Registry>https://hub.docker.com/r/6053537/portainer-ce/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/6053537/portainer-ce/</Support>
+  <Project/>
+  <Overview>portainer-ce&#x4E2D;&#x6587;&#x6C49;&#x5316;&#x7248;   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:9000]</WebUI>
+  <TemplateURL/>
+  <Icon>http://192.168.2.3:8083/api/raw/mnt/user/system/icon/png/portainer.png?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJsb2NhbGUiOiJ6aC1jbiIsInZpZXdNb2RlIjoibGlzdCIsInNob3dIaWRkZW4iOnRydWUsInBlcm0iOnsiYWRtaW4iOnRydWUsImV4ZWN1dGUiOnRydWUsImNyZWF0ZSI6dHJ1ZSwicmVuYW1lIjp0cnVlLCJtb2RpZnkiOnRydWUsImRlbGV0ZSI6dHJ1ZSwic2hhcmUiOnRydWUsImRvd25sb2FkIjp0cnVlfSwiY29tbWFuZHMiOltdLCJsb2NrUGFzc3dvcmQiOmZhbHNlLCJvdHAiOmZhbHNlLCJvdHBLZXkiOiJIUkpDWVNLSFM2NUlBRkE0STNaTE9YWVJRQzIzS0sySSJ9LCJleHAiOjE2NDY1MzIxNDgsImlhdCI6MTY0NjQ0NTc0OCwiaXNzIjoiRmlsZSBCcm93c2VyICB2Mi45LjEvNGQ3ZDhiZWJcbkJ1aWx0IEZvciAgIDogbGludXgvYW1kNjRcbkdvIFZlcnNpb24gIDogZ28xLjE0XG5SZWxlYXNlIERhdGU6IDIwMjAwMjI5LTIyNDkifQ.6DWvPBOuO5mE088psbcue7ZM_cWmtwnIPxux2fqPScc&amp;amp;inline=true</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1646447008</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>portainer-ce&#x4E2D;&#x6587;&#x6C49;&#x5316;&#x7248;   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9000</HostPort>
+        <ContainerPort>9000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/portainer</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/var/run/docker.sock</HostDir>
+      <ContainerDir>/var/run/docker.sock</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="webui" Target="9000" Default="9000" Mode="tcp" Description="&#x5BB9;&#x5668;webui&#x7AEF;&#x53E3;9000" Type="Port" Display="always" Required="false" Mask="false">9000</Config>
+  <Config Name="&#x914D;&#x7F6E;&#x8DEF;&#x5F84;" Target="/data" Default="/mnt/user/appdata/portainer" Mode="rw" Description="&#x5BB9;&#x5668;&#x914D;&#x7F6E;&#x8DEF;&#x5F84; Path: /data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/portainer</Config>
+  <Config Name="docker&#x5E93;" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="docker&#x5E95;&#x5C42;&#x6587;&#x4EF6;" Type="Path" Display="always" Required="false" Mask="false">/var/run/docker.sock</Config>
+</Container>

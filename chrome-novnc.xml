@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>chrome-novnc</Name>
+  <Repository>oldiy/chrome-novnc</Repository>
+  <Registry>https://hub.docker.com/r/oldiy/chrome-novnc/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/oldiy/chrome-novnc/</Support>
+  <Project/>
+  <Overview>&#x7528;&#x5728;&#x7FA4;&#x6656;&#x3001;&#x5A01;&#x8054;&#x901A;&#x7B49;&#x73AF;&#x5883;&#x4E0B;&#x7684;Chrome&#x6D4F;&#x89C8;&#x5668;&#xFF01;&#x5F88;&#x591A;&#x4EBA;&#x4E3A;&#x4E86;&#x8BBF;&#x95EE;&#x5C40;&#x57DF;&#x7F51;&#x7684;&#x8DEF;&#x7531;&#x5668;&#xFF0C;&#x9700;&#x8981;&#x8FDE;&#x63A5;VPN&#xFF0C;&#x8FD9;&#x4E2A;&#x5E2E;&#x4F60;&#x89E3;&#x51B3;!   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:5701]/vnc_lite.html</WebUI>
+  <TemplateURL/>
+  <Icon>http://192.168.2.3:8083/api/raw/mnt/user/system/icon/png/chrome.png?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJsb2NhbGUiOiJ6aC1jbiIsInZpZXdNb2RlIjoibGlzdCIsInNob3dIaWRkZW4iOnRydWUsInBlcm0iOnsiYWRtaW4iOnRydWUsImV4ZWN1dGUiOnRydWUsImNyZWF0ZSI6dHJ1ZSwicmVuYW1lIjp0cnVlLCJtb2RpZnkiOnRydWUsImRlbGV0ZSI6dHJ1ZSwic2hhcmUiOnRydWUsImRvd25sb2FkIjp0cnVlfSwiY29tbWFuZHMiOltdLCJsb2NrUGFzc3dvcmQiOmZhbHNlLCJvdHAiOmZhbHNlLCJvdHBLZXkiOiJIUkpDWVNLSFM2NUlBRkE0STNaTE9YWVJRQzIzS0sySSJ9LCJleHAiOjE2NDY1MzIxNDgsImlhdCI6MTY0NjQ0NTc0OCwiaXNzIjoiRmlsZSBCcm93c2VyICB2Mi45LjEvNGQ3ZDhiZWJcbkJ1aWx0IEZvciAgIDogbGludXgvYW1kNjRcbkdvIFZlcnNpb24gIDogZ28xLjE0XG5SZWxlYXNlIERhdGU6IDIwMjAwMjI5LTIyNDkifQ.6DWvPBOuO5mE088psbcue7ZM_cWmtwnIPxux2fqPScc&amp;amp;inline=true</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1646446807</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>&#x7528;&#x5728;&#x7FA4;&#x6656;&#x3001;&#x5A01;&#x8054;&#x901A;&#x7B49;&#x73AF;&#x5883;&#x4E0B;&#x7684;Chrome&#x6D4F;&#x89C8;&#x5668;&#xFF01;&#x5F88;&#x591A;&#x4EBA;&#x4E3A;&#x4E86;&#x8BBF;&#x95EE;&#x5C40;&#x57DF;&#x7F51;&#x7684;&#x8DEF;&#x7531;&#x5668;&#xFF0C;&#x9700;&#x8981;&#x8FDE;&#x63A5;VPN&#xFF0C;&#x8FD9;&#x4E2A;&#x5E2E;&#x4F60;&#x89E3;&#x51B3;!   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5701</HostPort>
+        <ContainerPort>8083</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>5901</HostPort>
+        <ContainerPort>5900</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/chrome/</HostDir>
+      <ContainerDir>/root/Downloads</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="webui" Target="8083" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 8083" Type="Port" Display="always" Required="false" Mask="false">5701</Config>
+  <Config Name="VNC" Target="5900" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 5900" Type="Port" Display="always" Required="false" Mask="false">5901</Config>
+  <Config Name="&#x914D;&#x7F6E;&#x76EE;&#x5F55;" Target="/root/Downloads" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/chrome/</Config>
+</Container>

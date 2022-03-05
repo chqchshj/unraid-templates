@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>QL</Name>
+  <Repository>whyour/qinglong</Repository>
+  <Registry>https://hub.docker.com/r/whyour/qinglong/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/whyour/qinglong/</Support>
+  <Project/>
+  <Overview>   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:5800]</WebUI>
+  <TemplateURL/>
+  <Icon>http://192.168.2.3:8083/api/raw/mnt/user/system/icon/png/qinglong.png?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJsb2NhbGUiOiJ6aC1jbiIsInZpZXdNb2RlIjoibGlzdCIsInNob3dIaWRkZW4iOnRydWUsInBlcm0iOnsiYWRtaW4iOnRydWUsImV4ZWN1dGUiOnRydWUsImNyZWF0ZSI6dHJ1ZSwicmVuYW1lIjp0cnVlLCJtb2RpZnkiOnRydWUsImRlbGV0ZSI6dHJ1ZSwic2hhcmUiOnRydWUsImRvd25sb2FkIjp0cnVlfSwiY29tbWFuZHMiOltdLCJsb2NrUGFzc3dvcmQiOmZhbHNlLCJvdHAiOmZhbHNlLCJvdHBLZXkiOiJIUkpDWVNLSFM2NUlBRkE0STNaTE9YWVJRQzIzS0sySSJ9LCJleHAiOjE2NDY1MzIxNDgsImlhdCI6MTY0NjQ0NTc0OCwiaXNzIjoiRmlsZSBCcm93c2VyICB2Mi45LjEvNGQ3ZDhiZWJcbkJ1aWx0IEZvciAgIDogbGludXgvYW1kNjRcbkdvIFZlcnNpb24gIDogZ28xLjE0XG5SZWxlYXNlIERhdGU6IDIwMjAwMjI5LTIyNDkifQ.6DWvPBOuO5mE088psbcue7ZM_cWmtwnIPxux2fqPScc&amp;amp;inline=true</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1646448813</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5800</HostPort>
+        <ContainerPort>5700</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/QL/config/</HostDir>
+      <ContainerDir>/ql/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/QL/log/</HostDir>
+      <ContainerDir>/ql/log</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/QL/db/</HostDir>
+      <ContainerDir>/ql/db</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/QL/scripts/</HostDir>
+      <ContainerDir>/ql/scripts</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/QL/jbot/</HostDir>
+      <ContainerDir>/ql/jbot</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="&#x7F51;&#x9875;&#x7AEF;&#x53E3;" Target="5700" Default="5700" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 5700" Type="Port" Display="always" Required="false" Mask="false">5800</Config>
+  <Config Name="&#x914D;&#x7F6E;&#x6587;&#x4EF6;" Target="/ql/config" Default="/mnt/user/appdata/QL/config/" Mode="rw" Description="&#x914D;&#x7F6E;&#x6587;&#x4EF6;" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/QL/config/</Config>
+  <Config Name="&#x65E5;&#x5FD7;&#x6587;&#x4EF6;" Target="/ql/log" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /ql/log" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/QL/log/</Config>
+  <Config Name="&#x6570;&#x636E;&#x5E93;" Target="/ql/db" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /ql/db" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/QL/db/</Config>
+  <Config Name="&#x811A;&#x672C;&#x8DEF;&#x5F84;" Target="/ql/scripts" Default="/mnt/user/appdata/QL/scripts/" Mode="rw" Description="&#x811A;&#x672C;&#x8DEF;&#x5F84;" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/QL/scripts/</Config>
+  <Config Name="&#x673A;&#x5668;&#x4EBA;" Target="/ql/jbot" Default="/mnt/user/appdata/QL/jbot/" Mode="rw" Description="&#x673A;&#x5668;&#x4EBA;" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/QL/jbot/</Config>
+</Container>

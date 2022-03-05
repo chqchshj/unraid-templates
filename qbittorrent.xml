@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>qbittorrent</Name>
+  <Repository>chisbread/qbittorrent</Repository>
+  <Registry>https://hub.docker.com/r/chisbread/qbittorrent</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/nevinee/qbittorrent/</Support>
+  <Project/>
+  <Overview>&#x4E3A;pt&#x4E0B;&#x8F7D;&#x5B9A;&#x5236;&#x7684;&#x201C;&#x5FEB;&#x901F;hash&#x6821;&#x9A8C;&#x201D;&#x7248;qbittorrent, &#x76F8;&#x5173;&#x4FEE;&#x6539;&#x89C1; https://github.com/ChisBread/libtorrent </Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>http://192.168.2.3:8083/api/raw/mnt/user/system/icon/png/qbittorrent.png?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJsb2NhbGUiOiJ6aC1jbiIsInZpZXdNb2RlIjoibGlzdCIsInNob3dIaWRkZW4iOnRydWUsInBlcm0iOnsiYWRtaW4iOnRydWUsImV4ZWN1dGUiOnRydWUsImNyZWF0ZSI6dHJ1ZSwicmVuYW1lIjp0cnVlLCJtb2RpZnkiOnRydWUsImRlbGV0ZSI6dHJ1ZSwic2hhcmUiOnRydWUsImRvd25sb2FkIjp0cnVlfSwiY29tbWFuZHMiOltdLCJsb2NrUGFzc3dvcmQiOmZhbHNlLCJvdHAiOmZhbHNlLCJvdHBLZXkiOiJIUkpDWVNLSFM2NUlBRkE0STNaTE9YWVJRQzIzS0sySSJ9LCJleHAiOjE2NDY1MzIxNDgsImlhdCI6MTY0NjQ0NTc0OCwiaXNzIjoiRmlsZSBCcm93c2VyICB2Mi45LjEvNGQ3ZDhiZWJcbkJ1aWx0IEZvciAgIDogbGludXgvYW1kNjRcbkdvIFZlcnNpb24gIDogZ28xLjE0XG5SZWxlYXNlIERhdGU6IDIwMjAwMjI5LTIyNDkifQ.6DWvPBOuO5mE088psbcue7ZM_cWmtwnIPxux2fqPScc&amp;amp;inline=true</Icon>
+  <ExtraParams>--hostname qbittorrent</ExtraParams>
+  <PostArgs/>
+  <CPUset>0,1</CPUset>
+  <DateInstalled>1646446550</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>&#x4E3A;pt&#x4E0B;&#x8F7D;&#x5B9A;&#x5236;&#x7684;&#x201C;&#x5FEB;&#x901F;hash&#x6821;&#x9A8C;&#x201D;&#x7248;qbittorrent, &#x76F8;&#x5173;&#x4FEE;&#x6539;&#x89C1; https://github.com/ChisBread/libtorrent </Description>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/qb</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/downloads/</HostDir>
+      <ContainerDir>/downloads</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>8080</Value>
+      <Name>WEBUI_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>GUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Asia/Shanghai</Value>
+      <Name>TZ</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="&#x914D;&#x7F6E;&#x8DEF;&#x5F84;" Target="/config" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/qb</Config>
+  <Config Name="&#x4E0B;&#x8F7D;&#x76EE;&#x5F55;" Target="/downloads" Default="/mnt/user/downloads/" Mode="rw" Description="&#x5BB9;&#x5668; Path: /data/downloads" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/downloads/</Config>
+  <Config Name="WEBUI_PORT" Target="WEBUI_PORT" Default="8080" Mode="" Description="&#x5BB9;&#x5668; Variable: WEBUI_PORT" Type="Variable" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="PUID" Target="PUID" Default="0" Mode="" Description="&#x5BB9;&#x5668; Variable: PUID" Type="Variable" Display="always" Required="true" Mask="false">0</Config>
+  <Config Name="GUID" Target="GUID" Default="0" Mode="" Description="&#x5BB9;&#x5668; Variable: GUID" Type="Variable" Display="always" Required="true" Mask="false">0</Config>
+  <Config Name="&#x65F6;&#x533A;" Target="TZ" Default="Asia/Shanghai" Mode="" Description="&#x5BB9;&#x5668; Variable: TZ" Type="Variable" Display="always" Required="true" Mask="false">Asia/Shanghai</Config>
+</Container>

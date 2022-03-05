@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>aliyundrive-webdav</Name>
+  <Repository>messense/aliyundrive-webdav</Repository>
+  <Registry>https://hub.docker.com/r/messense/aliyundrive-webdav/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/messense/aliyundrive-webdav/</Support>
+  <Project/>
+  <Overview>&#x963F;&#x91CC;&#x4E91;&#x76D8; WebDAV   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:18080]</WebUI>
+  <TemplateURL/>
+  <Icon>http://192.168.2.3:8083/api/raw/mnt/user/system/icon/png/aliyunpan.jpg?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJsb2NhbGUiOiJ6aC1jbiIsInZpZXdNb2RlIjoibGlzdCIsInNob3dIaWRkZW4iOnRydWUsInBlcm0iOnsiYWRtaW4iOnRydWUsImV4ZWN1dGUiOnRydWUsImNyZWF0ZSI6dHJ1ZSwicmVuYW1lIjp0cnVlLCJtb2RpZnkiOnRydWUsImRlbGV0ZSI6dHJ1ZSwic2hhcmUiOnRydWUsImRvd25sb2FkIjp0cnVlfSwiY29tbWFuZHMiOltdLCJsb2NrUGFzc3dvcmQiOmZhbHNlLCJvdHAiOmZhbHNlLCJvdHBLZXkiOiJIUkpDWVNLSFM2NUlBRkE0STNaTE9YWVJRQzIzS0sySSJ9LCJleHAiOjE2NDY1MzIxNDgsImlhdCI6MTY0NjQ0NTc0OCwiaXNzIjoiRmlsZSBCcm93c2VyICB2Mi45LjEvNGQ3ZDhiZWJcbkJ1aWx0IEZvciAgIDogbGludXgvYW1kNjRcbkdvIFZlcnNpb24gIDogZ28xLjE0XG5SZWxlYXNlIERhdGU6IDIwMjAwMjI5LTIyNDkifQ.6DWvPBOuO5mE088psbcue7ZM_cWmtwnIPxux2fqPScc&amp;amp;inline=true</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1646446488</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>&#x963F;&#x91CC;&#x4E91;&#x76D8; WebDAV   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>18080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/webdav-aliyun/</HostDir>
+      <ContainerDir>/etc/aliyundrive-webdav/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>0eb8072996b5460e823acb92c60216de</Value>
+      <Name>REFRESH_TOKEN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>chqchshj</Value>
+      <Name>WEBDAV_AUTH_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0213Yuxuan.</Value>
+      <Name>WEBDAV_AUTH_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="webdav&#x7AEF;&#x53E3;" Target="8080" Default="18080" Mode="tcp" Description="webdav&#x5BB9;&#x5668;&#x7AEF;&#x53E3;8080" Type="Port" Display="always" Required="true" Mask="false">18080</Config>
+  <Config Name="Host Path 1" Target="/etc/aliyundrive-webdav/" Default="/mnt/user/appdata/webdav-aliyun/" Mode="rw" Description="&#x5BB9;&#x5668;&#x5185;&#x8DEF;&#x5F84;&#xFF1A;/etc/aliyundrive-webdav/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/webdav-aliyun/</Config>
+  <Config Name="REFRESH_TOKEN" Target="REFRESH_TOKEN" Default="" Mode="" Description="REFRESH_TOKEN" Type="Variable" Display="always" Required="true" Mask="false">0eb8072996b5460e823acb92c60216de</Config>
+  <Config Name="&#x7528;&#x6237;&#x540D;" Target="WEBDAV_AUTH_USER" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: WEBDAV_AUTH_USER" Type="Variable" Display="always" Required="true" Mask="false">chqchshj</Config>
+  <Config Name="&#x5BC6;&#x7801;" Target="WEBDAV_AUTH_PASSWORD" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: WEBDAV_AUTH_PASSWORD" Type="Variable" Display="always" Required="true" Mask="false">0213Yuxuan.</Config>
+</Container>

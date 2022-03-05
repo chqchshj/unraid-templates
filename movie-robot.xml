@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>movie-robot</Name>
+  <Repository>yipengfei/movie-robot</Repository>
+  <Registry>https://hub.docker.com/r/yipengfei/movie-robot/</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support>https://hub.docker.com/r/yipengfei/movie-robot/</Support>
+  <Project/>
+  <Overview>&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x4ECE;&#x8C46;&#x74E3;&#x7528;&#x6237;&#x7684;&#x60F3;&#x770B;&#x3001;&#x5728;&#x770B;&#x3001;&#x770B;&#x8FC7;&#x5217;&#x8868;&#x4E2D;&#x81EA;&#x52A8;&#x83B7;&#x53D6;&#x7535;&#x5F71;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;PT&#x7AD9;&#x667A;&#x80FD;&#x68C0;&#x7D22;&#xFF0C;&#x627E;&#x5230;&#x6700;&#x4F73;&#x8D44;&#x6E90;&#x63D0;&#x4EA4;&#x5230;BT&#x5BA2;&#x6237;&#x7AEF;&#x4E0B;&#x8F7D;&#x3002;   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>http://192.168.2.3:8083/api/raw/mnt/user/system/icon/png/movie-robot-icon.png?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJsb2NhbGUiOiJ6aC1jbiIsInZpZXdNb2RlIjoibGlzdCIsInNob3dIaWRkZW4iOnRydWUsInBlcm0iOnsiYWRtaW4iOnRydWUsImV4ZWN1dGUiOnRydWUsImNyZWF0ZSI6dHJ1ZSwicmVuYW1lIjp0cnVlLCJtb2RpZnkiOnRydWUsImRlbGV0ZSI6dHJ1ZSwic2hhcmUiOnRydWUsImRvd25sb2FkIjp0cnVlfSwiY29tbWFuZHMiOltdLCJsb2NrUGFzc3dvcmQiOmZhbHNlLCJvdHAiOmZhbHNlLCJvdHBLZXkiOiJIUkpDWVNLSFM2NUlBRkE0STNaTE9YWVJRQzIzS0sySSJ9LCJleHAiOjE2NDY1MzIxNDgsImlhdCI6MTY0NjQ0NTc0OCwiaXNzIjoiRmlsZSBCcm93c2VyICB2Mi45LjEvNGQ3ZDhiZWJcbkJ1aWx0IEZvciAgIDogbGludXgvYW1kNjRcbkdvIFZlcnNpb24gIDogZ28xLjE0XG5SZWxlYXNlIERhdGU6IDIwMjAwMjI5LTIyNDkifQ.6DWvPBOuO5mE088psbcue7ZM_cWmtwnIPxux2fqPScc&amp;amp;inline=true</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1646448657</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x4ECE;&#x8C46;&#x74E3;&#x7528;&#x6237;&#x7684;&#x60F3;&#x770B;&#x3001;&#x5728;&#x770B;&#x3001;&#x770B;&#x8FC7;&#x5217;&#x8868;&#x4E2D;&#x81EA;&#x52A8;&#x83B7;&#x53D6;&#x7535;&#x5F71;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;PT&#x7AD9;&#x667A;&#x80FD;&#x68C0;&#x7D22;&#xFF0C;&#x627E;&#x5230;&#x6700;&#x4F73;&#x8D44;&#x6E90;&#x63D0;&#x4EA4;&#x5230;BT&#x5BA2;&#x6237;&#x7AEF;&#x4E0B;&#x8F7D;&#x3002;   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/movie-robot</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/downloads/</HostDir>
+      <ContainerDir>/downloads</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>XNMcmVe0mX8b4V6peVXCUEl9eRUhQAp4Gu41odZinGBc07kIvQ3EM8ITaTWUqz7xJXIXSBg3iFvMO2boOIFvRVBhijzB7fTxo9XpJkHErA1A9LDeYn53CcNyiuqaYxY9</Value>
+      <Name>LICENSE_KEY</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="&#x914D;&#x7F6E;&#x76EE;&#x5F55;" Target="/data" Default="/mnt/user/appdata/movie-robot" Mode="rw" Description="&#x5BB9;&#x5668; Path: /data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/movie-robot</Config>
+  <Config Name="&#x4E0B;&#x8F7D;&#x76EE;&#x5F55;" Target="/downloads" Default="/mnt/user/downloads" Mode="rw" Description="&#x5BB9;&#x5668; Path: /downloads" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/downloads/</Config>
+  <Config Name="LICENSE_KEY" Target="LICENSE_KEY" Default="" Mode="" Description="&#x53D8;&#x91CF;&#xFF1A;LICENSE_KEY" Type="Variable" Display="always" Required="true" Mask="false">XNMcmVe0mX8b4V6peVXCUEl9eRUhQAp4Gu41odZinGBc07kIvQ3EM8ITaTWUqz7xJXIXSBg3iFvMO2boOIFvRVBhijzB7fTxo9XpJkHErA1A9LDeYn53CcNyiuqaYxY9</Config>
+</Container>

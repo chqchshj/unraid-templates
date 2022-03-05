@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>pt-manage-plugin</Name>
+  <Repository>zht39635371/pt-manage-plugin</Repository>
+  <Registry>https://hub.docker.com/r/zht39635371/pt-manage-plugin/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/zht39635371/pt-manage-plugin/</Support>
+  <Project/>
+  <Overview>PT&#x7BA1;&#x7406;&#x5B9D;&#x8F85;&#x52A9;&#x7A0B;&#x5E8F;&#x955C;&#x50CF;   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:7001]</WebUI>
+  <TemplateURL/>
+  <Icon>http://192.168.2.3:8083/api/raw/mnt/user/system/icon/png/pt-manage-plugin.png?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJsb2NhbGUiOiJ6aC1jbiIsInZpZXdNb2RlIjoibGlzdCIsInNob3dIaWRkZW4iOnRydWUsInBlcm0iOnsiYWRtaW4iOnRydWUsImV4ZWN1dGUiOnRydWUsImNyZWF0ZSI6dHJ1ZSwicmVuYW1lIjp0cnVlLCJtb2RpZnkiOnRydWUsImRlbGV0ZSI6dHJ1ZSwic2hhcmUiOnRydWUsImRvd25sb2FkIjp0cnVlfSwiY29tbWFuZHMiOltdLCJsb2NrUGFzc3dvcmQiOmZhbHNlLCJvdHAiOmZhbHNlLCJvdHBLZXkiOiJIUkpDWVNLSFM2NUlBRkE0STNaTE9YWVJRQzIzS0sySSJ9LCJleHAiOjE2NDY1MzIxNDgsImlhdCI6MTY0NjQ0NTc0OCwiaXNzIjoiRmlsZSBCcm93c2VyICB2Mi45LjEvNGQ3ZDhiZWJcbkJ1aWx0IEZvciAgIDogbGludXgvYW1kNjRcbkdvIFZlcnNpb24gIDogZ28xLjE0XG5SZWxlYXNlIERhdGU6IDIwMjAwMjI5LTIyNDkifQ.6DWvPBOuO5mE088psbcue7ZM_cWmtwnIPxux2fqPScc&amp;amp;inline=true</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1646446898</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>PT&#x7BA1;&#x7406;&#x5B9D;&#x8F85;&#x52A9;&#x7A0B;&#x5E8F;&#x955C;&#x50CF;   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>7001</HostPort>
+        <ContainerPort>7001</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/ptmanageplugin/db</HostDir>
+      <ContainerDir>/app/db</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="&#x914D;&#x7F6E;&#x6587;&#x4EF6;" Target="/app/db" Default="/mnt/user/appdata/ptmanageplugin" Mode="rw" Description="&#x5BB9;&#x5668; Path: /app/db" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/ptmanageplugin/db</Config>
+  <Config Name="webui" Target="7001" Default="7001" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 7001" Type="Port" Display="always" Required="true" Mask="false">7001</Config>
+</Container>
