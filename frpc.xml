@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>frpc</Name>
+  <Repository>stilleshan/frpc</Repository>
+  <Registry>https://hub.docker.com/r/stilleshan/frpc/</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/stilleshan/frpc/</Support>
+  <Project/>
+  <Overview>&#x66F4;&#x65B0;&#x81F3; v0.39.0 &#x57FA;&#x4E8E;&#x539F;&#x7248; frp &#x5185;&#x7F51;&#x7A7F;&#x900F;&#x5BA2;&#x6237;&#x7AEF; frpc &#x7684;&#x4E00;&#x952E;&#x5B89;&#x88C5;&#x5378;&#x8F7D;&#x811A;&#x672C;&#x548C; docker &#x955C;&#x50CF;.&#x652F;&#x6301;&#x7FA4;&#x6656;NAS,Linux &#x670D;&#x52A1;&#x5668;&#x548C; docker &#x7B49;&#x591A;&#x79CD;&#x73AF;&#x5883;&#x5B89;&#x88C5;&#x90E8;&#x7F72;.   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>http://192.168.2.3:8083/api/raw/mnt/user/system/icon/png/frpc-icon.png?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJsb2NhbGUiOiJ6aC1jbiIsInZpZXdNb2RlIjoibGlzdCIsInNob3dIaWRkZW4iOnRydWUsInBlcm0iOnsiYWRtaW4iOnRydWUsImV4ZWN1dGUiOnRydWUsImNyZWF0ZSI6dHJ1ZSwicmVuYW1lIjp0cnVlLCJtb2RpZnkiOnRydWUsImRlbGV0ZSI6dHJ1ZSwic2hhcmUiOnRydWUsImRvd25sb2FkIjp0cnVlfSwiY29tbWFuZHMiOltdLCJsb2NrUGFzc3dvcmQiOmZhbHNlLCJvdHAiOmZhbHNlLCJvdHBLZXkiOiJIUkpDWVNLSFM2NUlBRkE0STNaTE9YWVJRQzIzS0sySSJ9LCJleHAiOjE2NDY1MzIxNDgsImlhdCI6MTY0NjQ0NTc0OCwiaXNzIjoiRmlsZSBCcm93c2VyICB2Mi45LjEvNGQ3ZDhiZWJcbkJ1aWx0IEZvciAgIDogbGludXgvYW1kNjRcbkdvIFZlcnNpb24gIDogZ28xLjE0XG5SZWxlYXNlIERhdGU6IDIwMjAwMjI5LTIyNDkifQ.6DWvPBOuO5mE088psbcue7ZM_cWmtwnIPxux2fqPScc&amp;amp;inline=true</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1646446236</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>&#x66F4;&#x65B0;&#x81F3; v0.39.0 &#x57FA;&#x4E8E;&#x539F;&#x7248; frp &#x5185;&#x7F51;&#x7A7F;&#x900F;&#x5BA2;&#x6237;&#x7AEF; frpc &#x7684;&#x4E00;&#x952E;&#x5B89;&#x88C5;&#x5378;&#x8F7D;&#x811A;&#x672C;&#x548C; docker &#x955C;&#x50CF;.&#x652F;&#x6301;&#x7FA4;&#x6656;NAS,Linux &#x670D;&#x52A1;&#x5668;&#x548C; docker &#x7B49;&#x591A;&#x79CD;&#x73AF;&#x5883;&#x5B89;&#x88C5;&#x90E8;&#x7F72;.   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/frpc/frpc.ini</HostDir>
+      <ContainerDir>/frp/frpc.ini</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="&#x914D;&#x7F6E;&#x76EE;&#x5F55;" Target="/frp/frpc.ini" Default="/mnt/user/appdata/frpc/frpc.ini" Mode="rw" Description="&#x5BB9;&#x5668; Path: /frp/frpc.ini" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/frpc/frpc.ini</Config>
+</Container>
