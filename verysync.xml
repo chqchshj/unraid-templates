@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>verysync</Name>
+  <Repository>jonnyan404/verysync</Repository>
+  <Registry>https://hub.docker.com/r/jonnyan404/verysync/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/jonnyan404/verysync/</Support>
+  <Project/>
+  <Overview>[&#x5B98;&#x65B9;QQ&#x7FA4;&#x8BA4;&#x8BC1;]&#x652F;&#x6301;arm64/amd64&#x7684;&#x5FAE;&#x529B;&#x540C;&#x6B65;   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8886]</WebUI>
+  <TemplateURL/>
+  <Icon>http://192.168.2.3:8083/api/raw/mnt/user/system/icon/png/verysync.png?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJsb2NhbGUiOiJ6aC1jbiIsInZpZXdNb2RlIjoibGlzdCIsInNob3dIaWRkZW4iOnRydWUsInBlcm0iOnsiYWRtaW4iOnRydWUsImV4ZWN1dGUiOnRydWUsImNyZWF0ZSI6dHJ1ZSwicmVuYW1lIjp0cnVlLCJtb2RpZnkiOnRydWUsImRlbGV0ZSI6dHJ1ZSwic2hhcmUiOnRydWUsImRvd25sb2FkIjp0cnVlfSwiY29tbWFuZHMiOltdLCJsb2NrUGFzc3dvcmQiOmZhbHNlLCJvdHAiOmZhbHNlLCJvdHBLZXkiOiJIUkpDWVNLSFM2NUlBRkE0STNaTE9YWVJRQzIzS0sySSJ9LCJleHAiOjE2NDY1MzIxNDgsImlhdCI6MTY0NjQ0NTc0OCwiaXNzIjoiRmlsZSBCcm93c2VyICB2Mi45LjEvNGQ3ZDhiZWJcbkJ1aWx0IEZvciAgIDogbGludXgvYW1kNjRcbkdvIFZlcnNpb24gIDogZ28xLjE0XG5SZWxlYXNlIERhdGU6IDIwMjAwMjI5LTIyNDkifQ.6DWvPBOuO5mE088psbcue7ZM_cWmtwnIPxux2fqPScc&amp;amp;inline=true</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1646445941</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>[&#x5B98;&#x65B9;QQ&#x7FA4;&#x8BA4;&#x8BC1;]&#x652F;&#x6301;arm64/amd64&#x7684;&#x5FAE;&#x529B;&#x540C;&#x6B65;   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3000</HostPort>
+        <ContainerPort>3000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>22037</HostPort>
+        <ContainerPort>22037</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>22027</HostPort>
+        <ContainerPort>22027</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>22330</HostPort>
+        <ContainerPort>22330</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8886</HostPort>
+        <ContainerPort>8886</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="&#x6302;&#x8F7D;&#x76EE;&#x5F55;" Target="/data" Default="/mnt/user/" Mode="rw" Description="&#x5BB9;&#x5668; Path: /data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/</Config>
+  <Config Name="Host Port 1" Target="3000" Default="3000" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 3000" Type="Port" Display="always" Required="true" Mask="false">3000</Config>
+  <Config Name="Host Port 2" Target="22037" Default="22037" Mode="udp" Description="&#x5BB9;&#x5668; Port: 22037" Type="Port" Display="always" Required="true" Mask="false">22037</Config>
+  <Config Name="Host Port 3" Target="22027" Default="22027" Mode="udp" Description="&#x5BB9;&#x5668; Port: 22027" Type="Port" Display="always" Required="true" Mask="false">22027</Config>
+  <Config Name="Host Port 4" Target="22330" Default="22330" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 22330" Type="Port" Display="always" Required="true" Mask="false">22330</Config>
+  <Config Name="webui" Target="8886" Default="8886" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 8886" Type="Port" Display="always" Required="true" Mask="false">8886</Config>
+</Container>
